@@ -7,6 +7,6 @@ HelloWorld for various languages.
 + Java w/ Gradle
 + C++
 + Python
-+ TypeScript
-+ Haskell
++ TypeScript w/ Node.js and NPM
++ Haskell w/ Cabal
 
