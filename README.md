@@ -8,5 +8,5 @@ HelloWorld for various languages.
 + C++
 + Python
 + TypeScript
-
++ Haskell
 
