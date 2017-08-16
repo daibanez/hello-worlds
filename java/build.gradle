@@ -32,3 +32,10 @@ dependencies {
 	// 'test.useTestNG()' to your build script.
 	testCompile 'junit:junit:4.12'
 }
+
+run {
+	// pass cli args to java
+	if(project.hasProperty('myargs')) {
+		args(myargs.split(','))
+	}
+}
