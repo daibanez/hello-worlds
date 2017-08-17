@@ -1,7 +1,20 @@
 
 # Hello Worlds
 
-Non-trivial HelloWorld project setups for a few languages with reason:
+Non-trivial HelloWorld project setups.
+
+Each implementation will implement a HelloWorld console application that follows tech stack based conventions to:
+
+- Take in optial args to output "Hello {arg[i]}!".
+- Setup project structure.
+- Includes unit tests.
+- Use a task runner to build, test, clean, etc.
+- Utilize a dependency management system where appropriate.
+- Implement code quality checking with a linter (integrated with task runner).
+
+
+
+Implementations:
 
 + C# w/ .NET Core
   + C# is a major target for industry and with .NET Core it can now be cross-platform.
