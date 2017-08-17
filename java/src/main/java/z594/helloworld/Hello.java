@@ -1,6 +1,6 @@
 package z594.helloworld;
 
-public final class HelloWorld {
+public final class Hello {
 
 	public static final String helloTemplate = "Hello %s!";
 	public static final String defaultUser = "World";

@@ -4,13 +4,13 @@ import org.junit.Test;
 import org.junit.Assert;
 import org.hamcrest.CoreMatchers;
 
-public class UserMessageTest {
+public class HelloTest {
 
 	@Test
 	public void defaultMessage() {
 		Assert.assertThat(
-			HelloWorld.sayHello(),
-			CoreMatchers.containsString(HelloWorld.defaultUser)
+			Hello.sayHello(),
+			CoreMatchers.containsString(Hello.defaultUser)
 		);
 	}
 
@@ -18,7 +18,7 @@ public class UserMessageTest {
 	public void customUsername() {
 		String user = "Me";
 		Assert.assertThat(
-			HelloWorld.sayHello(user),
+			Hello.sayHello(user),
 			CoreMatchers.containsString(user)
 		);
 	}
