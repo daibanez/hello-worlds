@@ -6,20 +6,14 @@ namespace HelloWorld
 	{
 
 		public static readonly string helloTemplate;
-		public static readonly string defaultUser;
+		public const string defaultUser = "World";
 
 		static Hello()
 		{
 			helloTemplate = "Hello {0}!";
-			defaultUser = "World";
 		}
 
-		public static string SayHello()
-		{
-			return SayHello(defaultUser);
-		}
-
-		public static string SayHello(string name)
+		public static string SayHello(string name = defaultUser)
 		{
 			return String.Format(helloTemplate, name);
 		}
