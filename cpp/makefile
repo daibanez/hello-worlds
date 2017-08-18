@@ -2,10 +2,11 @@
 srcDir := src
 outDir := bin
 
-all: helloWorld
+run: build
+	$(outDir)/HelloWorld
 
-helloWorld:
-	g++ $(srcDir)/helloworld.cpp -o $(outDir)/helloWorld
+build:
+	g++ $(srcDir)/HelloWorld/main.cpp -o $(outDir)/HelloWorld
 
 clean:
 	rm -rf $(outDir)/*
