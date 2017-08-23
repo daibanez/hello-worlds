@@ -6,9 +6,14 @@
 
 [How to write a Haskell Program](https://wiki.haskell.org/How_to_write_a_Haskell_program)
 
+https://docs.haskellstack.org/en/stable/GUIDE/#stackyaml-vs-cabal-files
+
+
 ```bash
-cabal init
-cabal sandbox init
-cabal install -j
-.cabal-sandbox/bin/helloworld
+brew install haskell-stack
+stack new hello-world
+cd hello-world
+stack setup
+stack build
+stack exec hello-world-exe
 ```
