@@ -16,4 +16,5 @@ cd hello-world
 stack setup
 stack build
 stack exec hello-world-exe
+stack test
 ```
