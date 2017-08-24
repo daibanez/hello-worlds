@@ -8,4 +8,4 @@ import Lib
 main :: IO ()
 main = do
     args <- getArgs
-    putStrLn $ unlines $ map sayHello $ strToMaybeStr $ args
+    putStrLn $ unlines $ map sayHello $ listStrToListMaybeStr $ args

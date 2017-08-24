@@ -2,7 +2,7 @@
 
 module Lib
     ( sayHello
-    , strToMaybeStr
+    , listStrToListMaybeStr
     ) where
 
 import qualified Text.Format as TF
@@ -17,6 +17,6 @@ sayHello :: Maybe String -> String
 sayHello Nothing = TF.format messageTemplate [defaultUser]
 sayHello (Just name) = TF.format messageTemplate [name]
 
-strToMaybeStr :: [String] -> [Maybe String]
-strToMaybeStr [] = [Nothing]
-strToMaybeStr x = map Just x
+listStrToListMaybeStr :: [String] -> [Maybe String]
+listStrToListMaybeStr [] = [Nothing]
+listStrToListMaybeStr x = map Just x
